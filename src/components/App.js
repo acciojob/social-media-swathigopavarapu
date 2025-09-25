@@ -7,7 +7,7 @@ import PostDetails from './PostDetails';
 import UsersPage from './UsersPage';
 import NotificationsPage from './NotificationsPage';
 
-// Sample data
+
 const initialUsers = ["Alice", "Bob", "Charlie"];
 const initialPosts = [
   { id: 1, title: "First Post", author: "Alice", content: "Hello world!", reactions: [0,0,0,0,0] }
