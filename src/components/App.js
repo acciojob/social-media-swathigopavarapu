@@ -51,8 +51,13 @@ const App = () => {
       <div className="App">
         <h1>GenZ</h1>
         <nav>
-          <a href="/">Posts</a> | <a href="/users">Users</a> | <a href="/notifications">Notifications</a>
-        </nav>
+  <Link to="/">Posts</Link> | 
+  <Link to="/users">Users</Link> | 
+  <Link to="/notifications">Notifications</Link> | 
+  <Link to="/create">Create Post</Link>
+</nav>
+
+        
         <Routes>
           <Route path="/" element={<LandingPage posts={posts} addReaction={addReaction} />} />
           <Route path="/posts/:id" element={<PostDetails posts={posts} updatePost={updatePost} />} />
