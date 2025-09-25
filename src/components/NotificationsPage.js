@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NotificationsPage = ({ notifications, refresh }) => {
+const NotificationsPage = ({ notifications, refresh }) => {
   return (
     <div>
       <button className="button" onClick={refresh}>Refresh Notifications</button>
@@ -12,3 +12,5 @@ export const NotificationsPage = ({ notifications, refresh }) => {
     </div>
   );
 };
+
+export default NotificationsPage;

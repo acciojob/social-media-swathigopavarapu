@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const UsersPage = ({ users, posts }) => {
+const UsersPage = ({ users, posts }) => {
   const [selectedUser, setSelectedUser] = useState(null);
 
   return (
@@ -19,3 +19,5 @@ export const UsersPage = ({ users, posts }) => {
     </div>
   );
 };
+
+export default UsersPage;

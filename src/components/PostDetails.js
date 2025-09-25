@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-export const PostDetails = ({ posts, updatePost }) => {
+const PostDetails = ({ posts, updatePost }) => {
   const { id } = useParams();
   const post = posts.find(p => p.id === parseInt(id));
   const [title, setTitle] = useState(post.title);
@@ -21,3 +21,5 @@ export const PostDetails = ({ posts, updatePost }) => {
     </div>
   );
 };
+
+export default PostDetails;
